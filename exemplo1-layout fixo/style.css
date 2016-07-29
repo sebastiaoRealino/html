@@ -12,11 +12,25 @@ body{
 .aside-nav ul{
     list-style-type: none;
     padding: 0;
+    margin: 0;
+}
+
+.main-header{
+    margin-bottom:5px;
 }
 
 .main-nav a,
 .aside-nav a{
     text-decoration: none;
+}
+
+.aside-nav li{
+    padding-bottom: 5px;
+    border-bottom: dotted 1px #000
+}
+
+.main-nav li{
+    display: inline;
 }
 
 .main-header{
@@ -51,6 +65,19 @@ body{
     padding: 10px;
     text-align: center;
     margin: 15px auto;
+}
+
+/*Menu Mobile*/
+#input-toggle,
+.menu-toggle{  
+    display:none;
+}
+.menu-toggle{
+    background-color:#0084B4;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
 }
 
 

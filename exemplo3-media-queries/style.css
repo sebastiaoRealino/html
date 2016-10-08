@@ -1,0 +1,77 @@
+/*Resets auxiliares*/
+/*Resets*/
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section,figure { 
+	margin: 0; 
+	padding: 0;
+	border: 0
+}
+
+ul,ol{
+    list-style: none
+}
+
+/*o width dos elementos agora será a soma do conteúdo com a borda e o padding.*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+/*Fim resets*/
+
+/*Clear fix, Importante para ajudar nos problemas com float
+https://css-tricks.com/snippets/css/clear-fix/
+*/
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/*Fim clearfix*/
+
+/*Estilo Geral*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125em;/* 18 / 16 */
+    width: 100%;/* Considerando 1280px inicialmente*/
+}
+
+.content{
+    width: 75,56%;/*980 / 1280*/
+}
+
+.content figure{
+    width: 33%;
+    float: left
+}
+
+h1 {
+	font-size: 1.8em;
+	margin: .9em 0 0 0;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 1.5em 0 0 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	background: #000;
+	border-radius: 1px;
+	color: white;
+	margin: 0 0 0.55em 0;
+	text-align: center;
+}
+
+figcaption {
+	font-size: 0.7em;
+}

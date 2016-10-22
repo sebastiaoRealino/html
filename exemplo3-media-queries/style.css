@@ -75,3 +75,14 @@ figure {
 figcaption {
 	font-size: 0.7em;
 }
+
+car_figures_div{
+    background-color: red;
+}
+
+@media screen and (max-width:479px){
+    .figure_car{
+        width: 50%;
+        float: left;
+    }
+}

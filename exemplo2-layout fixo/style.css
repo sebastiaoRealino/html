@@ -37,11 +37,11 @@ https://css-tricks.com/snippets/css/clear-fix/
 /*Estilo geral*/
 html{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px
+    font-size: 18px; 
 }
 
 p{
-    font-size: 16px
+    font-size: 0.88em; /*16/18*/
 }
 
 a{
@@ -57,16 +57,17 @@ a{
 /*Layout*/
 body{
     background-color: #fff;
-    width: 980px;
+    width: 100%;
     margin: 0 auto
 }
 
 #header{
-    height: 65px
+    /*height: 65px; */
+    height: 6.63%; /*65/980*/
 }
 
 #content section{
-    padding: 100px 0  
+    padding: 0.102em 0  
 }
 
 #header,#footer{
@@ -75,7 +76,7 @@ body{
 }
 
 #header{
-   width: 980px;
+   width: 100%;/*980*/
    position: fixed;
    z-index: 100;
    top: 0
@@ -83,12 +84,12 @@ body{
 
 #header h1{
     float: left;
-    padding: 12px
+    padding: 0.066em
 }
 
 #main-nav{
     float: right;
-    padding: 22.5px
+    padding: 0.022em
 }
 
 #main-nav ul li{
@@ -96,7 +97,7 @@ body{
 }
 
 #main-nav a{
-    padding: 15px;
+    padding: 0.015em;
     color: #fff
 }
 
@@ -108,41 +109,46 @@ body{
 
 
 /*Home*/
-
+/*@media menu_principal and (max-width:640px){
+    .aside-nav{
+        display: none
+    }
+}*/
 #home figure{
-    float: left
+    float: left;
+    width: 32.65%;
 }
 
 #home p{
     line-height: 1.5;
     float: right;
-    width: 400px
+    width: 40.81%;
 }
 
 /*Portfolio*/
 
 #portfolio figure{
     float: left;
-    max-width: 320px;
-    padding: 10px;
+    max-width: 32.65%;
+    padding: 0.102em;
 }
 
 #portfolio img{
-    width: 300px
+    width: 100%
 }
 
 /*Sobre*/
 
 #sobre p{
     display: inline-block;
-    width: 450px;
+    width: 45.91%;
     line-height: 1.5;
-    margin: 0 0 30px 30px;
+    margin: 0 0 0.030em 0.030em;
 }
 
 /*footer*/
 
 #footer p{
     text-align: center;
-    padding: 30px
+    padding: 0.030em
 }
